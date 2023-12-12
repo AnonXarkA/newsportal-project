@@ -1,14 +1,20 @@
 {
     "name": "laravel/laravel",
     "type": "project",
+<<<<<<< HEAD
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
+=======
+    "description": "The skeleton application for the Laravel framework.",
+    "keywords": ["laravel", "framework"],
+>>>>>>> origin/feature-branch
     "license": "MIT",
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
+<<<<<<< HEAD
         "laravel/tinker": "^2.8",
         "realrashid/sweet-alert": "^7.0",
         "spatie/laravel-permission": "^5.10"
@@ -17,6 +23,13 @@
         "barryvdh/laravel-debugbar": "^3.8",
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.21",
+=======
+        "laravel/tinker": "^2.8"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "laravel/breeze": "^1.26",
+>>>>>>> origin/feature-branch
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
@@ -30,10 +43,14 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
+<<<<<<< HEAD
         },
         "files": [
             "app/Helpers/helper.php"
         ]
+=======
+        }
+>>>>>>> origin/feature-branch
     },
     "autoload-dev": {
         "psr-4": {

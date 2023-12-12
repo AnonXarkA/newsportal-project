@@ -4,7 +4,10 @@ namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Gate;
+=======
+>>>>>>> origin/feature-branch
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -22,6 +25,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+<<<<<<< HEAD
         $this->registerPolicies();
 
         // Implicitly grant "Super Admin" role all permissions
@@ -29,5 +33,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::before(function ($user, $ability) {
             return $user->hasRole('Super Admin') ? true : null;
         });
+=======
+        //
+>>>>>>> origin/feature-branch
     }
 }

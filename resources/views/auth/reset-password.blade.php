@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 {{-- <x-guest-layout>
+=======
+<x-guest-layout>
+>>>>>>> origin/feature-branch
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
 
@@ -7,21 +11,33 @@
 
         <!-- Email Address -->
         <div>
+<<<<<<< HEAD
             <x-input-label for="email" :value="__('frontend.Email')" />
+=======
+            <x-input-label for="email" :value="__('Email')" />
+>>>>>>> origin/feature-branch
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email', $request->email)" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <!-- Password -->
         <div class="mt-4">
+<<<<<<< HEAD
             <x-input-label for="password" :value="__('frontend.Password')" />
+=======
+            <x-input-label for="password" :value="__('Password')" />
+>>>>>>> origin/feature-branch
             <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
         <!-- Confirm Password -->
         <div class="mt-4">
+<<<<<<< HEAD
             <x-input-label for="password_confirmation" :value="__('frontend.Confirm Password')" />
+=======
+            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+>>>>>>> origin/feature-branch
 
             <x-text-input id="password_confirmation" class="block mt-1 w-full"
                                 type="password"
@@ -32,6 +48,7 @@
 
         <div class="flex items-center justify-end mt-4">
             <x-primary-button>
+<<<<<<< HEAD
                 {{ __('frontend.Reset Password') }}
             </x-primary-button>
         </div>
@@ -85,3 +102,10 @@
     </section>
     <!-- end login -->
 @endsection
+=======
+                {{ __('Reset Password') }}
+            </x-primary-button>
+        </div>
+    </form>
+</x-guest-layout>
+>>>>>>> origin/feature-branch

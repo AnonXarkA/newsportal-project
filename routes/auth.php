@@ -25,7 +25,11 @@ Route::middleware('guest')->group(function () {
     Route::get('forgot-password', [PasswordResetLinkController::class, 'create'])
                 ->name('password.request');
 
+<<<<<<< HEAD
     Route::post('forgot-password', [PasswordResetLinkController::class, 'userStore'])
+=======
+    Route::post('forgot-password', [PasswordResetLinkController::class, 'store'])
+>>>>>>> origin/feature-branch
                 ->name('password.email');
 
     Route::get('reset-password/{token}', [NewPasswordController::class, 'create'])

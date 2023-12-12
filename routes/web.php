@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\LanguageController;
+=======
+>>>>>>> origin/feature-branch
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +19,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', [HomeController::class, 'index']);
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> origin/feature-branch
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -28,6 +37,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+<<<<<<< HEAD
 require __DIR__.'/auth.php';
 
 Route::get('language', LanguageController::class)->name('language');
@@ -55,3 +65,6 @@ Route::get('contact', [HomeController::class, 'contact'])->name('contact');
 /** Contact Page Route */
 Route::post('contact', [HomeController::class, 'handleContactFrom'])->name('contact.submit');
 
+=======
+require __DIR__ . '/auth.php';
+>>>>>>> origin/feature-branch

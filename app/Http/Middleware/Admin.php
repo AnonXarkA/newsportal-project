@@ -6,6 +6,10 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> origin/feature-branch
 
 class Admin
 {
@@ -16,8 +20,14 @@ class Admin
      */
     public function handle(Request $request, Closure $next): Response
     {
+<<<<<<< HEAD
         if(!Auth::guard('admin')->check()){
             return redirect()->route('admin.login')->with('error', 'Please Login First!');
+=======
+
+        if(!Auth::guard('admin')->check()){
+            return redirect()->route('admin.login')->with('error','Please Login First!');
+>>>>>>> origin/feature-branch
         }
         return $next($request);
     }

@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+<<<<<<< HEAD
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>General Dashboard &mdash; BRACU News</title>
+=======
+    <title>General Dashboard &mdash; Stisla</title>
+>>>>>>> origin/feature-branch
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/fontawesome/css/all.min.css') }}">
 
     <!-- CSS Libraries -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/summernote/summernote-bs4.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/select2/dist/css/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/datatables/datatables.min.css') }}">
@@ -22,6 +27,10 @@
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('admin/assets/css/bootstrap-iconpicker.min.css') }}">
+=======
+
+    <link rel="stylesheet" href="{{ asset('admin/assets/modules/summernote/summernote-bs4.css') }}">
+>>>>>>> origin/feature-branch
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('admin/assets/css/style.css') }}">
@@ -40,9 +49,13 @@
     </script>
     <!-- /END GA -->
 </head>
+<<<<<<< HEAD
 @php
     $unReadMessages = \App\Models\RecivedMail::where('seen', 0)->count();
 @endphp
+=======
+
+>>>>>>> origin/feature-branch
 <body>
     <div id="app">
         <div class="main-wrapper main-wrapper-1">
@@ -61,11 +74,16 @@
     <script src="{{ asset('admin/assets/modules/popper.js') }}"></script>
     <script src="{{ asset('admin/assets/modules/tooltip.js') }}"></script>
     <script src="{{ asset('admin/assets/modules/bootstrap/js/bootstrap.min.js') }}"></script>
+<<<<<<< HEAD
     <script src="{{ asset('admin/assets/modules/nicescroll/jquery.nicescroll.min.js') }}"></script>
+=======
+    <script src="{{ asset('admin/assets/modules/nicescroll/jquery.nicescroll.min.j') }}s"></script>
+>>>>>>> origin/feature-branch
     <script src="{{ asset('admin/assets/modules/moment.min.js') }}"></script>
     <script src="{{ asset('admin/assets/js/stisla.js') }}"></script>
 
     <!-- JS Libraies -->
+<<<<<<< HEAD
     <script src="{{ asset('admin/assets/modules/summernote/summernote-bs4.js') }}"></script>
     <script src="{{ asset('admin/assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js') }}"></script>
     <script src="{{ asset('admin/assets/modules/select2/dist/js/select2.full.min.js') }}"></script>
@@ -81,10 +99,19 @@
     @include('sweetalert::alert')
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+=======
+
+    <script src="{{ asset('admin/assets/modules/summernote/summernote-bs4.js') }}"></script>
+
+
+    {{-- <!-- Page Specific JS File -->
+  <script src="{{ asset('admin/assets/js/page/index-0.js') }}"></script> --}}
+>>>>>>> origin/feature-branch
 
     <!-- Template JS File -->
     <script src="{{ asset('admin/assets/js/scripts.js') }}"></script>
     <script src="{{ asset('admin/assets/js/custom.js') }}"></script>
+<<<<<<< HEAD
 
     <script>
         $.uploadPreview({
@@ -168,6 +195,8 @@
 
 
     @stack('scripts')
+=======
+>>>>>>> origin/feature-branch
 </body>
 
 </html>

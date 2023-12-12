@@ -105,6 +105,10 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/feature-branch
         'admins' => [
             'provider' => 'admins',
             'table' => 'password_reset_tokens',

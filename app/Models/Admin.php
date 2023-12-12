@@ -7,13 +7,20 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+<<<<<<< HEAD
 use Spatie\Permission\Traits\HasRoles;
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> origin/feature-branch
 
 class Admin extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+<<<<<<< HEAD
     use HasRoles;
 
+=======
+>>>>>>> origin/feature-branch
     protected $guard = 'admin';
     /**
      * The attributes that are mass assignable.
@@ -45,5 +52,8 @@ class Admin extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/feature-branch
 }

@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< HEAD
          xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+=======
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+>>>>>>> origin/feature-branch
          bootstrap="vendor/autoload.php"
          colors="true"
 >
     <testsuites>
         <testsuite name="Unit">
+<<<<<<< HEAD
             <directory suffix="Test.php">./tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
+=======
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory>tests/Feature</directory>
+>>>>>>> origin/feature-branch
         </testsuite>
     </testsuites>
     <source>
         <include>
+<<<<<<< HEAD
             <directory suffix=".php">./app</directory>
+=======
+            <directory>app</directory>
+>>>>>>> origin/feature-branch
         </include>
     </source>
     <php>

@@ -17,7 +17,11 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
+<<<<<<< HEAD
     public const HOME = '/';
+=======
+    public const HOME = '/dashboard';
+>>>>>>> origin/feature-branch
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
@@ -33,11 +37,19 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
+<<<<<<< HEAD
             Route::middleware(['web', 'set_language'])
                 ->group(base_path('routes/web.php'));
 
             Route::middleware(['web', 'set_language'])
             ->group(base_path('routes/admin.php'));
+=======
+            Route::middleware('web')
+                ->group(base_path('routes/web.php'));
+
+            Route::middleware('web')
+                ->group(base_path('routes/admin.php'));
+>>>>>>> origin/feature-branch
         });
     }
 }

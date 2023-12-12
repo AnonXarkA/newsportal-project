@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+<<<<<<< HEAD
 
         $this->call(AdminSeeder::class);
         $this->call(LanguageSeeder::class);
@@ -25,5 +26,8 @@ class DatabaseSeeder extends Seeder
         $this->call(FooterInfoSeeder::class);
 
 
+=======
+        $this->call(AdminSeeder::class);
+>>>>>>> origin/feature-branch
     }
 }

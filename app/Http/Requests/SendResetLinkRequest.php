@@ -17,7 +17,11 @@ class SendResetLinkRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
+<<<<<<< HEAD
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
+=======
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+>>>>>>> origin/feature-branch
      */
     public function rules(): array
     {

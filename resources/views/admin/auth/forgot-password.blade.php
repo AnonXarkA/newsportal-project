@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+<<<<<<< HEAD
   <title>Login &mdash; Stisla</title>
+=======
+  <title>Admin Login &mdash; </title>
+>>>>>>> origin/feature-branch
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -32,6 +36,7 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+<<<<<<< HEAD
             <div class="login-brand">
               <img src="assets/img/stisla-fill.svg" alt="logo" width="100" class="shadow-light rounded-circle">
             </div>
@@ -60,6 +65,36 @@
                   <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                       {{ __('admin.Send Link') }}
+=======
+            {{-- <div class="login-brand">
+              <img src="assets/img/stisla-fill.svg" alt="logo" width="100" class="shadow-light rounded-circle">
+            </div> --}}
+
+            <div class="card card-primary">
+              <div class="card-header"><h4>Admin Password Reset</h4></div>
+
+              <div class="card-body">
+                <form method="POST" action="{{ route('admin.handle_login') }}" class="needs-validation" novalidate="">
+                    @csrf
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                    @error('email')
+                        <code>{{ $message }}</code>
+
+                    @enderror
+                    <div class="invalid-feedback">
+                      Please fill in your email
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                      Login
+>>>>>>> origin/feature-branch
                     </button>
                   </div>
                 </form>
@@ -69,7 +104,11 @@
             </div>
 
             <div class="simple-footer">
+<<<<<<< HEAD
               {{ __('admin.Copyright') }} &copy; {{ __('admin.WebSolutionUs 2023') }}
+=======
+              Copyright &copy; Team SDNS (2023)
+>>>>>>> origin/feature-branch
             </div>
           </div>
         </div>
@@ -78,9 +117,15 @@
   </div>
 
   <!-- General JS Scripts -->
+<<<<<<< HEAD
   <script src="{{ asset('admin/assets/modules/jquery.min.js') }}"></script>
   <script src="{{ asset('admin/assets/modules/popper.js') }}"></script>
   <script src="{{ asset('admin/assets/modules/tooltip.js') }}"></script>
+=======
+  <script src="{{asset('admin/assets/modules/jquery.min.js')}}"></script>
+  <script src="{{asset('admin/assets/modules/popper.js')}}"></script>
+  <script src="{{asset('admin/assets/modules/tooltip.js')}}"></script>
+>>>>>>> origin/feature-branch
   <script src="{{ asset('admin/assets/modules/bootstrap/js/bootstrap.min.js') }}"></script>
   <script src="{{ asset('admin/assets/modules/nicescroll/jquery.nicescroll.min.js') }}"></script>
   <script src="{{ asset('admin/assets/modules/moment.min.js') }}"></script>
